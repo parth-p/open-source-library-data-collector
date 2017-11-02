@@ -9,7 +9,7 @@ class ProjectTests(unittest.TestCase):
 
     # ./Docker or docker/Docker
     def test_docker_dir(self):
-        self.assertEqual(True, os.path.isdir("./Docker"))
+        self.assertEqual(True, os.path.isdir("./Dockerfile"))
 
     # ./docker-compose.yml or ./docker/docker-compose.yml
     def test_docker_compose(self):
@@ -49,7 +49,7 @@ class ProjectTests(unittest.TestCase):
 
     # ./LICENSE.md
     def test_license(self):
-        self.assertEqual(True, os.path.isfile('./LICENSE.md'))
+        self.assertEqual(True, os.path.isfile('./LICENSE.txt'))
 
     # ./.github/PULL_REQUEST_TEMPLATE
     def test_pr_template(self):
